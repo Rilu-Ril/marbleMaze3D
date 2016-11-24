@@ -13,6 +13,12 @@
 		337CD9AD1DE2ED2000C3227F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 337CD9AC1DE2ED2000C3227F /* Assets.xcassets */; };
 		337CD9B01DE2ED2000C3227F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 337CD9AE1DE2ED2000C3227F /* LaunchScreen.storyboard */; };
 		337CD9B81DE2F19100C3227F /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 337CD9B71DE2F19100C3227F /* art.scnassets */; };
+		339F06051DE6F73A00C9972E /* obj_pearl.scn in Resources */ = {isa = PBXBuildFile; fileRef = 339F06041DE6F73A00C9972E /* obj_pearl.scn */; };
+		339F060C1DE6F8DF00C9972E /* CoreMotionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339F06071DE6F8DF00C9972E /* CoreMotionHelper.swift */; };
+		339F060D1DE6F8DF00C9972E /* GameHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339F06081DE6F8DF00C9972E /* GameHelper.swift */; };
+		339F060E1DE6F8DF00C9972E /* GameUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339F06091DE6F8DF00C9972E /* GameUtils.swift */; };
+		339F060F1DE6F8DF00C9972E /* SCNAction+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339F060A1DE6F8DF00C9972E /* SCNAction+Extensions.swift */; };
+		339F06101DE6F8DF00C9972E /* SCNVector3+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339F060B1DE6F8DF00C9972E /* SCNVector3+Extensions.swift */; };
 		33DC3F141DE6E95600798F77 /* set_restpoint.scn in Resources */ = {isa = PBXBuildFile; fileRef = 33DC3F131DE6E95600798F77 /* set_restpoint.scn */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +31,12 @@
 		337CD9AF1DE2ED2000C3227F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		337CD9B11DE2ED2000C3227F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		337CD9B71DE2F19100C3227F /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		339F06041DE6F73A00C9972E /* obj_pearl.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = obj_pearl.scn; path = art.scnassets/obj_pearl.scn; sourceTree = "<group>"; };
+		339F06071DE6F8DF00C9972E /* CoreMotionHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreMotionHelper.swift; sourceTree = "<group>"; };
+		339F06081DE6F8DF00C9972E /* GameHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameHelper.swift; sourceTree = "<group>"; };
+		339F06091DE6F8DF00C9972E /* GameUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameUtils.swift; sourceTree = "<group>"; };
+		339F060A1DE6F8DF00C9972E /* SCNAction+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SCNAction+Extensions.swift"; sourceTree = "<group>"; };
+		339F060B1DE6F8DF00C9972E /* SCNVector3+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SCNVector3+Extensions.swift"; sourceTree = "<group>"; };
 		33DC3F131DE6E95600798F77 /* set_restpoint.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = set_restpoint.scn; path = art.scnassets/set_restpoint.scn; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -60,7 +72,9 @@
 			children = (
 				337CD9A31DE2ED2000C3227F /* AppDelegate.swift */,
 				33DC3F131DE6E95600798F77 /* set_restpoint.scn */,
+				339F06041DE6F73A00C9972E /* obj_pearl.scn */,
 				337CD9A71DE2ED2000C3227F /* GameViewController.swift */,
+				339F06061DE6F8DF00C9972E /* GameUtils */,
 				337CD9B71DE2F19100C3227F /* art.scnassets */,
 				337CD9A91DE2ED2000C3227F /* Main.storyboard */,
 				337CD9AC1DE2ED2000C3227F /* Assets.xcassets */,
@@ -68,6 +82,18 @@
 				337CD9B11DE2ED2000C3227F /* Info.plist */,
 			);
 			path = MarbleMaze;
+			sourceTree = "<group>";
+		};
+		339F06061DE6F8DF00C9972E /* GameUtils */ = {
+			isa = PBXGroup;
+			children = (
+				339F06071DE6F8DF00C9972E /* CoreMotionHelper.swift */,
+				339F06081DE6F8DF00C9972E /* GameHelper.swift */,
+				339F06091DE6F8DF00C9972E /* GameUtils.swift */,
+				339F060A1DE6F8DF00C9972E /* SCNAction+Extensions.swift */,
+				339F060B1DE6F8DF00C9972E /* SCNVector3+Extensions.swift */,
+			);
+			path = GameUtils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,6 +159,7 @@
 				337CD9B01DE2ED2000C3227F /* LaunchScreen.storyboard in Resources */,
 				337CD9B81DE2F19100C3227F /* art.scnassets in Resources */,
 				33DC3F141DE6E95600798F77 /* set_restpoint.scn in Resources */,
+				339F06051DE6F73A00C9972E /* obj_pearl.scn in Resources */,
 				337CD9AD1DE2ED2000C3227F /* Assets.xcassets in Resources */,
 				337CD9AB1DE2ED2000C3227F /* Main.storyboard in Resources */,
 			);
@@ -145,8 +172,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				339F060C1DE6F8DF00C9972E /* CoreMotionHelper.swift in Sources */,
+				339F060D1DE6F8DF00C9972E /* GameHelper.swift in Sources */,
+				339F060F1DE6F8DF00C9972E /* SCNAction+Extensions.swift in Sources */,
+				339F060E1DE6F8DF00C9972E /* GameUtils.swift in Sources */,
 				337CD9A81DE2ED2000C3227F /* GameViewController.swift in Sources */,
 				337CD9A41DE2ED2000C3227F /* AppDelegate.swift in Sources */,
+				339F06101DE6F8DF00C9972E /* SCNVector3+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
